@@ -122,16 +122,12 @@ var validaob = document.forms["artForm"]["aob"].value;
     // if (validaob == "") {
     //   alert("Write sothing unique about you");
     // } 
-
+return true;
   }
 </script>
-<!--Header-->
-<div class="page-header">
-  <h1 align="center" >WELCOME TO NGOMA MUSIC</h1>
-</div>
 
 <!-- Form for data entry-->
-<form class="form-horizontal" style="background-color: #4e3f3e;width: 50%;margin:auto;color: white;" name="artForm" action="" method="post" onsubmit="return validateEntries()">
+<form class="form-horizontal" style="background-color: #4e3f3e;width: 50%;margin:auto;color: white;" name="artForm" action="" method="post" onclick ="return validateEntries()">
   <div align="center">
   <h1> SIGN UP NOW</h1>
   </div>
@@ -140,9 +136,9 @@ var validaob = document.forms["artForm"]["aob"].value;
   <div class="form-group">
     <label class="control-label col-sm-2" for="email">Name:</label>
       <div class="col-lg-10">
-        <input type="text" class="form-control" id="name" placeholder="Full Name" required="">
-             </div>
-          </div>  
+        <input type="text" class="form-control" id="name" placeholder="Full Name" required>
+      </div>
+  </div>  
 
   <div class="form-group">
    <label class="control-label col-sm-2" for="email">Email:</label>
@@ -229,7 +225,7 @@ var validaob = document.forms["artForm"]["aob"].value;
         <textarea name="aob" class="form-control" rows="4" cols="50" required placeholder=" Something unique about yourself"></textarea>
         </div>
       </div>
-   <div style="padding-left:63%; color: black;"><input type="submit" name="submit" ></div><br><br>
+   <div style="float: right; color: black;"><input type="submit" name="submit" onclick="return validateEntries()"></div><br><br>
     Already have an account?<div class="btn btn-link"><a href="home.php">Sign in</a></div>
 
   </div>
