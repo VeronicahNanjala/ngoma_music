@@ -114,9 +114,9 @@ var validabout = document.forms["artForm"]["about"].value;
     // }  
 
 var validcontact = document.forms["artForm"]["contact"].value;
-    // if (validcontact == "") {
-    //   alert("Write your contact information");
-    // } 
+    if (validcontact == "") {
+      alert("Write your contact information");
+     } 
 
 var validaob = document.forms["artForm"]["aob"].value;
     // if (validaob == "") {
